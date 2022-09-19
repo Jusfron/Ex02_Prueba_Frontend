@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const API_URL = 'https://www.themoviedb.org/authenticate/e13cdab9a221830cad6d9aced7788e74';
+const API_URL = 'https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=e13cdab9a221830cad6d9aced7788e74';
 
 @Injectable({
   providedIn: 'root'

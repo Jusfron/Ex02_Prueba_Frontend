@@ -1,1 +1,15 @@
-<p>series-detail works!</p>
+<div class="container p-5">
+    <div class="row">
+        <div class="col-3 float-end" >
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2{{serie.poster_path}}">
+        </div>
+        <div class="col-9">
+            <h2 *ngIf="serie.name != ''">Name: {{serie.name}}</h2>
+            <h2 *ngIf="serie.name != ''">Original name: {{serie.original_name}}</h2>
+            <h2 *ngIf="serie.original_language != ''">Language: {{serie.original_language}}</h2>
+            <h2 *ngIf="serie.overview != ''">Overview: {{serie.overview}}</h2>
+            <h2 *ngIf="serie.popularity != ''">Popularity: {{serie.popularity}}</h2>
+            <h2 *ngIf="serie.release_date != ''">Release date: {{serie.release_date}}</h2>
+        </div>
+    </div>
+</div>
