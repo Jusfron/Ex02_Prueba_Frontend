@@ -2,26 +2,26 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
-## Development server
+## Deployement
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+https://master.d2y1bn6klfijxn.amplifyapp.com/home
 
-## Code scaffolding
+Login screen
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://master.d2y1bn6klfijxn.amplifyapp.com/login
 
-## Build
+To list all movies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+https://master.d2y1bn6klfijxn.amplifyapp.com/movie-list
 
-## Running unit tests
+To list all series
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+https://master.d2y1bn6klfijxn.amplifyapp.com/series-list
 
-## Running end-to-end tests
+For each movie
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+https://master.d2y1bn6klfijxn.amplifyapp.com/movie-detail/{id}
 
-## Further help
+For each series
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://master.d2y1bn6klfijxn.amplifyapp.com/series-detail/{id}
