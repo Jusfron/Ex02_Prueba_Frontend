@@ -22,17 +22,18 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthService, private tokenStorage: TokenStorageService, private http: HttpClient) { }
 
   ngOnInit(): void {
-    if ( this.tokenStorage.getToken()) {
-      this.isLoggedIn = true;
-      this.role = this.tokenStorage.getUser().roles;
-
-
-      this.http.get('https://api.themoviedb.org/3/authentication/token/new?api_key=e13cdab9a221830cad6d9aced7788e74').subscribe(data => {
+    this.http.get('https://api.themoviedb.org/3/authentication/token/new?api_key=e13cdab9a221830cad6d9aced7788e74').subscribe(data => {
         this.token = data;
         console.log(this.token);
         this.token = this.token.request_token;
         console.log(this.token);
       });
+    if ( this.tokenStorage.getToken()) {
+      this.isLoggedIn = true;
+      this.role = this.tokenStorage.getUser().roles;
+
+
+      
     }
   }
 
