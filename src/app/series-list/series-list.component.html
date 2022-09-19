@@ -1,1 +1,23 @@
-<p>series-list works!</p>
+<div class="container">
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">List of series</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" id="search-input" aria-label="Search" value={{search}}>
+                <button class="btn btn-outline-success" type="submit" (click)="searchName()">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="row row-cols-auto g-4">
+        <div class="col" *ngFor="let serie of series.results;">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2{{serie.poster_path}}"
+                    class="card-img-top">
+                <div class="card-body d-grid gap-2">
+                    <h3 class="card-title">{{serie.title}}</h3>
+                    <a href="/serie/{{serie.id}}" class="btn btn-warning">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
